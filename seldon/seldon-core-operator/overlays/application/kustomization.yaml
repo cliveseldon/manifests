@@ -12,5 +12,5 @@ commonLabels:
   app.kubernetes.io/part-of: kubeflow
   app.kubernetes.io/version: v1.0.1
 
-#patchesStrategicMerge:
-#- patch_manager_istio.yaml
+patchesStrategicMerge:
+- deployment.yaml
