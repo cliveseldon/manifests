@@ -4,7 +4,7 @@ seldon-core:
 
 seldon-core-operator/base: seldon-core clean-kustomize
 	mkdir -p seldon-core-operator/base
-	helm template -f values.yaml seldon-core/helm-charts/seldon-core-operator --namespace kubeflow > seldon-core-operator/base/resources.yaml
+	helm template --api-versions 1.12 -f values.yaml seldon-core/helm-charts/seldon-core-operator --namespace kubeflow > seldon-core-operator/base/resources.yaml
 	cp kustomization.tpl seldon-core-operator/base/kustomization.yaml
 
 .PHONY: clean
