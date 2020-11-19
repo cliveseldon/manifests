@@ -26,8 +26,8 @@ resources:
   - ../../seldon/seldon-core-operator/overlays/application
   # Metadata
   - ../../metadata/v3
-configurations:
-  - ../../seldon/seldon-core-operator/base/kustomizeconfig.yaml
+#configurations:
+#  - ../../seldon/seldon-core-operator/base/kustomizeconfig.yaml
 generatorOptions:
   disableNameSuffixHash: true
 configMapGenerator:
